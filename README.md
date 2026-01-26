@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+Présentation personnelle et site portfolio construit avec Next.js, TypeScript et Tailwind CSS.
 
-First, run the development server:
+## Aperçu
+
+Site statique/SSR pour présenter des projets, compétences et formulaire de contact.
+
+## Technologies
+
+- Next.js (app router)
+- TypeScript
+- Tailwind CSS
+
+## Installation
+
+Prérequis: Node.js 18+ et un gestionnaire de paquets (npm, pnpm ou yarn).
+
+1. Installer les dépendances:
+
+```bash
+npm install
+# ou
+pnpm install
+```
+
+# Portfolio
+
+Persönliche Präsentation und Portfolio-Website, erstellt mit Next.js, TypeScript und Tailwind CSS.
+
+## Überblick
+
+Statische/SSR-Website zur Präsentation von Projekten, Fähigkeiten und einem Kontaktformular.
+
+## Technologien
+
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+
+## Installation
+
+Voraussetzungen: Node.js 18+ und ein Paketmanager (npm, pnpm oder yarn).
+
+1. Abhängigkeiten installieren:
+
+```bash
+npm install
+# oder
+pnpm install
+```
+
+2. Entwicklungsserver starten:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
+# oder
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Die Website ist unter http://localhost:3000 erreichbar.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Nützliche Skripte
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `dev` : Startet den Server im Entwicklungsmodus
+- `build` : Erstellt die Anwendung für die Produktion
+- `start` : Startet die produktive Version
+- `lint` : Führt Linter/Formatter aus (sofern konfiguriert)
 
-## Learn More
+## Wichtige Dateien
 
-To learn more about Next.js, take a look at the following resources:
+- Hauptseite: [app/page.tsx](app/page.tsx)
+- Kontakt-API: [app/api/contact.ts](app/api/contact.ts)
+- Komponenten: [components](components)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Umgebungsvariablen
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Wenn du das Kontaktformular oder externe Integrationen nutzt, erstelle eine `.env.local`-Datei im Stammverzeichnis und füge die erforderlichen Schlüssel hinzu (z. B. API-Key für einen E-Mail-Dienst). Siehe [app/api/contact.ts](app/api/contact.ts) für die erwarteten Variablen.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Bereitstellung auf Vercel, Netlify oder jedem anderen Next.js-kompatiblen Dienst. Für einen lokalen Produktionstest:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm start
+```
+
+## Mitwirken
+
+Reiche Issues oder Pull Requests ein, um Inhalte zu korrigieren oder zu erweitern. Bitte halte dich an die Formatierungsregeln sowie die TypeScript-/Tailwind-Konventionen des Projekts.
+
+## Lizenz
+
+Noch festzulegen (standardmäßig MIT, falls gewünscht).
+
+## Erste Schritte
+
+Entwicklungsserver starten:
+
+```bash
+npm run dev
+```
+
+Öffne http://localhost:3000 in deinem Browser, um das Ergebnis zu sehen. Du kannst die Seite bearbeiten, indem du `app/page.tsx` änderst — die Seite aktualisiert sich automatisch.
+
+## Weiterführende Ressourcen
+
+- [Next.js Dokumentation](https://nextjs.org/docs)
+- [Next.js Learn](https://nextjs.org/learn)
+
+## Deployment auf Vercel
+
+Der einfachste Weg, deine Next.js-App zu deployen, ist die Nutzung von Vercel: https://vercel.com/new
+
+Mehr Details findest du in der Next.js-Dokumentation zum Deployment: https://nextjs.org/docs/app/building-your-application/deploying
