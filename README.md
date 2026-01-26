@@ -1,31 +1,5 @@
 # Portfolio
 
-Présentation personnelle et site portfolio construit avec Next.js, TypeScript et Tailwind CSS.
-
-## Aperçu
-
-Site statique/SSR pour présenter des projets, compétences et formulaire de contact.
-
-## Technologies
-
-- Next.js (app router)
-- TypeScript
-- Tailwind CSS
-
-## Installation
-
-Prérequis: Node.js 18+ et un gestionnaire de paquets (npm, pnpm ou yarn).
-
-1. Installer les dépendances:
-
-```bash
-npm install
-# ou
-pnpm install
-```
-
-# Portfolio
-
 Persönliche Präsentation und Portfolio-Website, erstellt mit Next.js, TypeScript und Tailwind CSS.
 
 ## Überblick
