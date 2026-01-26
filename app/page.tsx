@@ -8,7 +8,7 @@ export default function HomePage() {
 
   // Pour éviter les erreurs d'hydratation avec les dates dynamiques
   useEffect(() => {
-    const date = new Date().toLocaleDateString('fr-FR', {
+    const date = new Date().toLocaleDateString('en-US', {
       weekday: 'long',
       year: 'numeric',
       month: 'long',

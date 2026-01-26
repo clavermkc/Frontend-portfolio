@@ -85,10 +85,10 @@ const handleSubmit = async (e: FormEvent) => {
       
       {/* Titre style Terminal */}
       <div className="mb-8 font-mono">
-        <h1 className="text-4xl md:text-3xl mb-2">
+        <h1 className="text-2xl md:text-3xl mb-2">
           <span className="text-accent">$</span> Let's have a chat!
         </h1>
-        <div className="h-1 w-20 bg-accent/30 mt-2"></div>
+        <div className="h-1 w-20 bg-accent/50 mt-2"></div>
       </div>
 
       {/* Messages d'état */}
@@ -97,7 +97,7 @@ const handleSubmit = async (e: FormEvent) => {
           <div className="flex items-center gap-3 text-accent">
             <CheckCircle className="w-5 h-5" />
             <span className="font-mono font-medium">
-              Message envoyé avec succès ! Je vous répondrai dès que possible.
+              Message sent successfully! I'll get back to you as soon as possible.
             </span>
           </div>
         </div>
@@ -108,7 +108,7 @@ const handleSubmit = async (e: FormEvent) => {
           <div className="flex items-center gap-3 text-red-500">
             <AlertCircle className="w-5 h-5" />
             <div>
-              <span className="font-mono font-medium">Erreur d'envoi</span>
+              <span className="font-mono font-medium">Error occurred by sending this message</span>
               <p className="text-sm mt-1 text-red-400 font-mono">{errorMessage}</p>
             </div>
           </div>
@@ -150,11 +150,11 @@ const handleSubmit = async (e: FormEvent) => {
                   </div>
                 </div>
                 <a 
-                  href="/cv.pdf"
+                  href="/CV_Claver.pdf"
                   download="CV_Claver.pdf"
                   className="flex items-center gap-2 bg-accent text-black px-3 py-1.5 rounded text-xs font-bold hover:bg-white transition-colors"
                 >
-                  <Download size={14} />
+                  < Download size={14} />
                   DOWNLOAD
                 </a>
               </div>
@@ -245,12 +245,12 @@ const handleSubmit = async (e: FormEvent) => {
               {isLoading ? (
                 <>
                   <Loader2 size={16} className="animate-spin" />
-                  <span>Envoi en cours...</span>
+                  <span>Sending message in progress ...</span>
                 </>
               ) : (
                 <>
                   <Send size={16} />
-                  <span>Envoyer Séquence</span>
+                  <span>send Message</span>
                 </>
               )}
             </button>

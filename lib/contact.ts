@@ -24,7 +24,7 @@ const getApiBaseUrl = (): string => {
   // 2. URLs selon l'environnement (fallback)
   if (process.env.NODE_ENV === 'production') {
     // URL de production par défaut - À MODIFIER AVEC TON URL
-    return 'https://https://portfolio-springboot-production-39de.up.railway.app';
+    return 'https://portfolio-springboot-production-39de.up.railway.app';
   }
   
   // 3. Développement local (Spring Boot peut être en local)

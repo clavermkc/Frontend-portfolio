@@ -76,7 +76,7 @@ export default function LoginPage() {
               <label htmlFor="password" className="block text-sm font-medium text-textSecondary mb-2 font-mono">
                 <div className="flex items-center gap-2">
                   <KeyRound className="w-4 h-4" />
-                  <span>Mot de passe</span>
+                  <span>Password</span>
                 </div>
               </label>
               <div className="relative">
@@ -114,13 +114,13 @@ export default function LoginPage() {
                   className="w-4 h-4 border border-border rounded bg-bg text-accent 
                            focus:ring-2 focus:ring-accent/30 focus:ring-offset-2 focus:ring-offset-bg"
                 />
-                <span className="text-sm text-textSecondary font-mono">Se souvenir</span>
+                <span className="text-sm text-textSecondary font-mono">Remember me</span>
               </label>
               <Link
                 href="/forgot-password"
                 className="text-sm text-accent hover:text-accentHover underline underline-offset-2 font-mono"
               >
-                Mot de passe oublié ?
+                Forgot your password?
               </Link>
             </div>
 
@@ -140,7 +140,7 @@ export default function LoginPage() {
               ) : (
                 <>
                   <LogIn className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  <span>Se connecter</span>
+                  <span>Sign in</span>
                 </>
               )}
             </button>
