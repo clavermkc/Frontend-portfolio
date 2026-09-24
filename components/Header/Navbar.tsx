@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 import LogoHorizontal from "../LogoHorizontal";
 import ThemeToggle from "@/components/UI/ThemeToggle";
 import { Button } from "@/components/ui/button";
@@ -13,12 +12,13 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "Skills", href: "/skills" },
   { label: "Projects", href: "/projects" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
   { label: "Login", href: "/login" },
 ];
 
 export default function Navbar() {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur-sm border-b border-border">
@@ -32,7 +32,9 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
           {navItems.map((item) => {
-            const isActive = pathname === item.href;
+            const isActive = item.href === "/"
+              ? pathname === "/"
+              : pathname === item.href || pathname.startsWith(`${item.href}/`);
             return (
               <Link
                 key={item.href}
@@ -82,7 +84,9 @@ export default function Navbar() {
                 {/* Menu Items */}
                 <div className="flex-1 p-4 space-y-2 overflow-y-auto">
                   {navItems.map((item) => {
-                    const isActive = pathname === item.href;
+                    const isActive = item.href === "/"
+                      ? pathname === "/"
+                      : pathname === item.href || pathname.startsWith(`${item.href}/`);
                     return (
                       <SheetClose asChild key={item.href}>
                         <Link
@@ -104,7 +108,7 @@ export default function Navbar() {
                 <div className="p-4 border-t border-border">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-textSecondary font-mono">
-                      Clav's Portfolio
+                      Clav&apos;s Portfolio
                     </span>
                     <ThemeToggle />
                   </div>

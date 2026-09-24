@@ -9,10 +9,10 @@ const LogoHorizontal: React.FC<LogoProps> = ({ className = "", color = "#10B981"
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 320 40" // Augmenté légèrement car l'italique prend plus de place
+      viewBox="0 0 320 40"
       className={`font-mono ${className}`}
       height="40"
-      width="auto"
+      width="320"
       role="img"
       aria-label="Clav's Portfolio Logo"
     >
