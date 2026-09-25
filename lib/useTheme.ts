@@ -9,10 +9,14 @@ export function useTheme() {
 
   useEffect(() => {
     const stored = localStorage.getItem("theme") as Theme | null;
-    if (stored) {
+    if (!stored) return;
+
+    const timeoutId = window.setTimeout(() => {
       setTheme(stored);
       document.documentElement.setAttribute("data-theme", stored);
-    }
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   const toggleTheme = () => {

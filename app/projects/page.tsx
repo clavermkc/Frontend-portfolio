@@ -1,6 +1,6 @@
 import ProjectGrid from "@/app/projects/ProjectGrid";
 import { Project } from "@/types";
-import { Github, Linkedin } from "lucide-react";
+import { Github } from "lucide-react";
 
 const projects: Project[] = [
   {

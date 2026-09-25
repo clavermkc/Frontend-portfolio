@@ -29,7 +29,7 @@ const LogoHorizontal: React.FC<LogoProps> = ({ className = "", color = "#10B981"
           fontStyle: 'normal'
         }}
       >
-        Clav's Portfolio
+        Clav&apos;s Portfolio
       </text>
     </svg>
   );

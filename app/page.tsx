@@ -24,13 +24,16 @@ export default function HomePage() {
   const [currentDate, setCurrentDate] = useState("");
 
   useEffect(() => {
-    const date = new Date().toLocaleDateString('en-US', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
-    setCurrentDate(date);
+    const timeoutId = window.setTimeout(() => {
+      setCurrentDate(new Date().toLocaleDateString("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }));
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   const marqueeLogos = [...techLogos, ...techLogos];

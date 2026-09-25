@@ -58,7 +58,11 @@ export default function TechBackground() {
       };
     });
     
-    setElements(newElements);
+    const animationFrameId = window.requestAnimationFrame(() => {
+      setElements(newElements);
+    });
+
+    return () => window.cancelAnimationFrame(animationFrameId);
   }, []);
 
   return (
