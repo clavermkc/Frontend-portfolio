@@ -17,7 +17,7 @@ export default function Blog({ posts }) {
 
       <header className={styles.hero}>
         <span className={styles.eyebrow}>Blog</span>
-        <h1 className={styles.title}>Articles &amp; projets</h1>
+        <h3 className={styles.title}>Articles &amp; projets</h3>
 
         <div className={styles.heroMeta}>
           <p className={styles.description}>
@@ -36,11 +36,11 @@ export default function Blog({ posts }) {
             </div>
 
             <div className={styles.cardBody}>
-              <h2 className={styles.cardTitle}>
+              <h4 className={styles.cardTitle}>
                 <Link href={`/blog/${post.slug}`} className={styles.cardLink}>
                   {post.title}
                 </Link>
-              </h2>
+              </h4>
 
               <p className={styles.excerpt}>{post.excerpt}</p>
 

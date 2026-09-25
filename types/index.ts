@@ -8,6 +8,12 @@ export interface Project {
 
   /** Stack technique principale */
   technologies: string[];
+
+  /** URL publique du projet, si disponible */
+  projectUrl?: string;
+
+  /** URL du dépôt GitHub */
+  githubUrl?: string;
 }
 
 export interface SkillCategory {

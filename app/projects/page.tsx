@@ -31,6 +31,33 @@ const projects: Project[] = [
     date: "04/2024 ",
     technologies: ["Java", "JavaFX", "CSS", "Desktop Application"],
   },
+  {
+    id: 5,
+    titre: "1ClickApply",
+    description: "Plattform für automatisiertes Sourcing und Initiativbewerbungen mit Fokus auf effiziente Bewerbungsworkflows.",
+    date: "09/2026",
+    technologies: ["Next.js", "Automation", "Java", "REST API", "Full-Stack"],
+    projectUrl: "https://github.com/clavermkc/1Clickapply",
+    githubUrl: "https://github.com/clavermkc/1Clickapply",
+  },
+  {
+    id: 6,
+    titre: "Project Blogging",
+    description: "Portfolio und Blog mit Markdown-Inhalten, statischer Generierung und unkomplizierter Veröffentlichung technischer Artikel.",
+    date: "09/2026",
+    technologies: ["Next.js", "Markdown", "React", "Tailwind CSS", "SSG"],
+    projectUrl: "https://github.com/clavermkc/project_blogging",
+    githubUrl: "https://github.com/clavermkc/project_blogging",
+  },
+  {
+    id: 7,
+    titre: "Caching Proxy",
+    description: "HTTP-Proxy mit Caching-Logik zur Reduzierung von Ladezeiten und Optimierung von Netzwerkantworten.",
+    date: "09/2026",
+    technologies: ["Java", "Proxy", "Caching", "HTTP", "Performance"],
+    projectUrl: "https://github.com/clavermkc/Caching-Proxy",
+    githubUrl: "https://github.com/clavermkc/Caching-Proxy",
+  },
 ];
 
 export default function ProjectsPage() {
